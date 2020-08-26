@@ -1,0 +1,14 @@
+nav {
+    height: 70px;
+    background: $DarkBlue;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    @include boxShadow(0, 3px);
+
+    .logo {
+        font-size: 1.7rem;
+        font-weight: 800;
+    }
+}

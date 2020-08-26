@@ -1,0 +1,37 @@
+.form-title {
+    margin-bottom: 10px;
+
+    .search-container {
+        background: $DarkBlue;
+        border-radius: 5px;
+        @include boxShadow(2px, 3px);
+        width: auto;
+        padding: 0px 20px;
+
+        @include for-desktop() {
+            width: max-content;
+        }
+
+        .fa-search {
+            margin-right: 20px;
+            color: $White;
+        }
+
+        #movie-title {
+            width: calc(100% - 40px);
+            height: 50px;
+            border: none;
+            font-weight: 600;
+            color: $White;
+            background: $DarkBlue;
+
+            &:focus {
+                outline: none;
+            }
+
+            @include for-desktop() {
+                width: 400px;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+// mixin for dekstop display
+@mixin for-desktop() {
+    @media only screen and (min-width: 996px) {
+        @content;
+    }
+}
+
+@mixin boxShadow($x, $y) {
+    box-shadow: $x $y 15px 1px hsl(210, 26%, 13%)
+}

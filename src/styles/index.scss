@@ -1,0 +1,24 @@
+@import './variables';
+@import './mixins';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: $White;
+}
+
+body {
+    background: $VeryDarkBlue;
+
+    @import './navbar';
+
+    .container {
+        padding: 0 5%;
+
+        @import './form';
+
+        @import './main';
+    }
+}
