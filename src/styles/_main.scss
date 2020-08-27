@@ -1,5 +1,10 @@
 .movie-wrapper {
     display: grid;
-    grid-template-columns: repeat(5, minmax(150px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(205px, auto));
     grid-auto-rows: auto;
+    gap: 40px 25px;
+    justify-content: space-around;
+    margin-bottom: 70px;
+
+    @import './movie';
 }

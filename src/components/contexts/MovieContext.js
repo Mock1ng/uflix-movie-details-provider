@@ -5,6 +5,7 @@ export const MovieContext = createContext();
 export const MovieProvider = ({ children }) => {
     const [titleInput, setTitleInput] = useState('');
     const [movies, setMovies] = useState([]);
+    const [finishQuery, setFinishQuery] = useState('');
     const page = useRef(1);
 
     const getMovies = async (title, page) => {
@@ -15,7 +16,7 @@ export const MovieProvider = ({ children }) => {
     }
 
     return (
-        <MovieContext.Provider value={{ titleInput, setTitleInput, movies, setMovies, getMovies, page }}>
+        <MovieContext.Provider value={{ titleInput, setTitleInput, movies, setMovies, getMovies, page, finishQuery, setFinishQuery }}>
             {children}
         </MovieContext.Provider>
     )

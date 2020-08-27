@@ -1,14 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const Movie = ({ poster, title, year }) => {
+const Movie = ({ poster, title, year, id }) => {
     return (
-        <div className='movie'>
-            <img src={poster} alt={title + '\'s Poster'} />
-            <div className="movie-attributes">
-                <h4>{title}</h4>
-                <p>{year}</p>
+        <NavLink to={'/detail/movieId=' + id} className='movie'>
+            <div className="poster-container">
+                <img src={poster} alt={title + '\'s Poster'} />
             </div>
-        </div>
+            <div className="card-attributes">
+                <h4 className='attr-title'>{title}</h4>
+                <p className='attr-year'>{year}</p>
+            </div>
+        </NavLink>
     )
 }
 

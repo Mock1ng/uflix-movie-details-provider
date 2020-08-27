@@ -1,10 +1,19 @@
 import React, { useContext } from 'react';
 import { MovieContext } from './contexts/MovieContext';
 
-const Form = ({ submit }) => {
-    const { titleInput, setTitleInput } = useContext(MovieContext);
+const Form = () => {
+    const { titleInput, setTitleInput, finishQuery, setFinishQuery, page, getMovies } = useContext(MovieContext);
 
     const titleInputHandler = e => setTitleInput(e.target.value);
+
+    const submit = e => {
+        e.preventDefault();
+        page.current = 1;
+        setFinishQuery(titleInput);
+        getMovies(titleInput, page.current);
+        console.log(finishQuery);
+        setTitleInput('');
+    }
 
     return (
         <form onSubmit={submit} className='form-title'>

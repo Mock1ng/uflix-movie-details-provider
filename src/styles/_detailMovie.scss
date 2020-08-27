@@ -1,0 +1,81 @@
+.movie-detail-wrapper {
+    display: flex;
+
+    .img-wrapper {
+        margin-right: 40px;
+    }
+
+    .movie-details {
+        .head-movie {
+            .head-title {
+                display: flex;
+                margin-bottom: 5px;
+
+                h4 {
+                    margin-right: 50px;
+                    font-size: 2rem;
+                    max-width: 500px;
+
+                    span {
+                        font-size: 1.2rem;
+                        color: gray;
+                    }
+                }
+
+                .imdb-ratings {
+                    font-weight: 600;
+
+                    p,
+                    span {
+                        color: $GrayText;
+                    }
+
+                    span {
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .head-details {
+                margin-bottom: 30px;
+                max-width: 500px;
+
+                p {
+                    span {
+                        margin-right: 9px;
+                        color: gray;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        .movie-attrs {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+
+            .attr {
+                margin-bottom: 15px;
+                color: $GrayText;
+            }
+
+            .first-attrs {
+                margin-right: 30px;
+                width: 65%;
+
+                span {
+                    font-weight: 300;
+                    color: $GrayText;
+                }
+            }
+
+            .second-attrs {
+                span {
+                    font-weight: 300;
+                    color: $GrayText;
+                }
+            }
+        }
+    }
+}

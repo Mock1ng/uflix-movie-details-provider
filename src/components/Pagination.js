@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import { MovieContext } from './contexts/MovieContext';
 
-const Pagination = ({ finishQuery }) => {
-    const { getMovies, page } = useContext(MovieContext)
+const Pagination = () => {
+    const { getMovies, page, finishQuery } = useContext(MovieContext)
 
     const nextPage = () => {
         page.current += 1;
