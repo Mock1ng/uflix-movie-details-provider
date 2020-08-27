@@ -12,10 +12,10 @@
     margin-bottom: 40px;
     transition: 0.2s all ease;
     text-decoration: none;
+    font-size: 0.8rem;
 
     &:hover {
-        transform: translateY(-5px);
-        @include boxShadow(2px, 5px);
+        filter: brightness(120%);
     }
 }
 

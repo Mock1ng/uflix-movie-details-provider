@@ -1,0 +1,61 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .pagination-wrapper {
+        display: flex;
+        height: 30px;
+        align-items: center;
+
+        .btn {
+            height: 30px;
+            width: auto;
+            padding: 0 20px;
+            color: $White;
+            background: $DarkBlue;
+            border: none;
+            border-radius: 5px;
+            @include boxShadow(2px, 3px);
+            transition: 0.2s all ease;
+
+            &:hover {
+                filter: brightness(120%);
+            }
+        }
+
+        .prev-btn,
+        .next-btn {
+            margin: 0 10px;
+        }
+    }
+
+    .jump-page {
+        display: flex;
+        align-items: center;
+
+        p {
+            margin-right: 10px;
+        }
+
+        form,
+        #jump-page {
+            width: 50px;
+            height: 30px;
+            background: $DarkBlue;
+            border: none;
+            padding: 0 5px;
+            font-size: 1rem;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+    }
+}

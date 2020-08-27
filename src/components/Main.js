@@ -5,21 +5,24 @@ import Form from './Form';
 import Pagination from './Pagination';
 
 const Main = () => {
-    const { movies, finishQuery } = useContext(MovieContext);
+    const { movies, dataFound } = useContext(MovieContext);
 
 
     return (
         <div>
             <Form />
 
-            <p>You search for: {finishQuery}</p>
+            {dataFound > 0 ? (<p className='data-found'>Found {dataFound} item(s)</p>) : ''}
 
             <Pagination />
 
             <div className="movie-wrapper">
-                {movies.map(movie => (
-                    <Movie key={movie.imdbID} id={movie.imdbID} title={movie.Title} poster={movie.Poster} year={movie.Year} />
-                ))}
+                {movies ?
+                    movies.map(movie => (
+                        <Movie key={movie.imdbID} id={movie.imdbID} title={movie.Title} poster={movie.Poster} year={movie.Year} />
+                    ))
+                    : (<p>Seems.. like.. something went wrong :(</p>)
+                }
             </div>
 
         </div>
