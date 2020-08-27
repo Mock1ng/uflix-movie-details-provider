@@ -1,5 +1,27 @@
+.back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 30px;
+    color: $White;
+    background: $DarkBlue;
+    border: none;
+    border-radius: 5px;
+    @include boxShadow(2px, 3px);
+    margin-bottom: 40px;
+    transition: 0.2s all ease;
+    text-decoration: none;
+
+    &:hover {
+        transform: translateY(-5px);
+        @include boxShadow(2px, 5px);
+    }
+}
+
 .movie-detail-wrapper {
     display: flex;
+    margin-bottom: 40px;
 
     .img-wrapper {
         margin-right: 40px;
@@ -12,13 +34,14 @@
                 margin-bottom: 5px;
 
                 h4 {
-                    margin-right: 50px;
+                    margin-right: 90px;
                     font-size: 2rem;
-                    max-width: 500px;
+                    max-width: 550px;
 
                     span {
                         font-size: 1.2rem;
                         color: gray;
+                        text-transform: capitalize;
                     }
                 }
 
@@ -62,18 +85,51 @@
 
             .first-attrs {
                 margin-right: 30px;
-                width: 65%;
+                width: 70%;
 
                 span {
-                    font-weight: 300;
                     color: $GrayText;
+                    font-weight: 300;
+                }
+
+                .plot {
+
+                    h6 {
+                        color: $GrayText;
+                        font-size: 1rem;
+                        margin-bottom: 5px;
+                    }
+
+                    p {
+                        color: $GrayText;
+                        font-weight: 300;
+                    }
                 }
             }
 
             .second-attrs {
+                color: $GrayText;
+
                 span {
                     font-weight: 300;
-                    color: $GrayText;
+                }
+
+                .movie-ratings {
+
+                    .rating,
+                    p {
+                        color: $GrayText;
+                        margin-bottom: 3px;
+                    }
+
+                    .rating {
+                        font-size: 1rem;
+
+                    }
+
+                    p {
+                        font-weight: 300;
+                    }
                 }
             }
         }

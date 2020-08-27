@@ -20,7 +20,7 @@ const DetailMovie = ({ match }) => {
 
     return (
         <div>
-            <button><NavLink to='/'>Back</NavLink></button>
+            <NavLink className='back-btn' to='/'>Back</NavLink>
 
             <div className="movie-detail-wrapper">
                 <div className="img-wrapper">
@@ -29,7 +29,7 @@ const DetailMovie = ({ match }) => {
                 <div className="movie-details">
                     <div className="head-movie">
                         <div className="head-title">
-                            <h4>{movie.Title} <span>({movie.Year})</span></h4>
+                            <h4>{movie.Title} <span>({movie.Type}, {movie.Year})</span></h4>
                             <div className="imdb-ratings">
                                 <p>IMDb*: <span>{movie.imdbRating}</span></p>
                                 <p className='vote'>Votes: <span>{movie.imdbVotes}</span></p>
@@ -47,25 +47,26 @@ const DetailMovie = ({ match }) => {
                             <p className="attr">Writer(s): <span>{movie.Writer}</span></p>
                             <p className="attr">Casts: <span>{movie.Actors}</span></p>
                             <p className="attr">Language(s): <span>{movie.Language}</span></p>
+                            <div className="plot">
+                                <h6>Synopsis:</h6>
+                                <p>{movie.Plot}</p>
+                            </div>
                         </div>
                         <div className='second-attrs'>
                             <p className="attr">Production: <span>{movie.Production}</span></p>
                             <p className='attr'>Website: <span>{movie.Website}</span></p>
                             <p className="attr">Award(s): <span>{movie.Awards}</span></p>
+                            <div className="movie-ratings">
+                                <h5 className="rating">Rating(s):</h5>
+                                {ratings.map(rating => (
+                                    <p key={rating.Source}>{rating.Source}: <span>{rating.Value}</span></p>
+                                ))}
+                            </div>
                         </div>
                     </div>
 
-                    <div className="movie-ratings">
-                        <h5 className="rating">Rating:</h5>
-                        {ratings.map(rating => (
-                            <p key={rating.Source}>{rating.Source}: <span>{rating.Value}</span></p>
-                        ))}
-                    </div>
 
-                    <div className="plot">
-                        <h6>Synopsis:</h6>
-                        <p>{movie.Plot}</p>
-                    </div>
+
                 </div>
 
             </div>
