@@ -14,8 +14,7 @@ const DetailMovie = ({ match }) => {
         const res = await fetch(`http://www.omdbapi.com/?apikey=faf7e5bb&i=${id}&plot=full`);
         const data = await res.json();
         setMovie(data);
-        setRatings(data.Ratings)
-        console.log(data);
+        setRatings(data.Ratings);
     }
 
     return (

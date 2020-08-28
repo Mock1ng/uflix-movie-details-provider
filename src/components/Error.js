@@ -23,7 +23,7 @@ const Error = ({ isOpen, message }) => {
         return ReactDOM.createPortal(
             <div style={modalStyles}>
                 <p style={{ color: '#333' }}>{message}</p>
-            </div>, document.querySelector('#error')
+            </div>, document.querySelector('#popup')
         )
     } else {
         return '';

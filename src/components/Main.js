@@ -3,10 +3,10 @@ import { MovieContext } from './contexts/MovieContext';
 import Movie from './Movie';
 import Form from './Form';
 import Pagination from './Pagination';
+import Greeting from './Greeting';
 
 const Main = () => {
     const { movies, dataFound } = useContext(MovieContext);
-
 
     return (
         <div>
@@ -24,6 +24,8 @@ const Main = () => {
                     : (<p>Seems.. like.. something went wrong :(</p>)
                 }
             </div>
+
+            <Greeting />
 
         </div>
     )

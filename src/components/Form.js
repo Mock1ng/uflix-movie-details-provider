@@ -32,7 +32,7 @@ const Form = () => {
             <form onSubmit={submit} className='form-title'>
                 <section className='search-container'>
                     <i className="fas fa-search"></i>
-                    <input ref={inputRef} type="text" id='movie-title' placeholder='Search movie by title..' value={titleInput} onChange={titleInputHandler} autoComplete='off' />
+                    <input ref={inputRef} type="text" id='movie-title' placeholder='Try search "Avengers"...' value={titleInput} onChange={titleInputHandler} autoComplete='off' />
                     <i onClick={removeQuery} className="fas fa-times remove-query"></i>
                 </section>
             </form>

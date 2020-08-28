@@ -1,0 +1,52 @@
+.greeting {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.685);
+
+    .greeting-message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: $White;
+        z-index: 10000;
+        width: 500px;
+        height: 200px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        h2,
+        p {
+            color: $DarkBlue;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .got-it {
+            background: $DarkBlue;
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+            height: 30px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                filter: brightness(120%);
+                cursor: pointer;
+            }
+        }
+
+    }
+}
