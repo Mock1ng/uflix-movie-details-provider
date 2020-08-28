@@ -5,16 +5,17 @@ import Error from './Error';
 const Pagination = () => {
     const { getMovies, page, finishQuery, pageJump, setPageJump, dataFound } = useContext(MovieContext);
     const [isOpen, setIsOpen] = useState(false);
+    const [message, setMessage] = useState('');
 
     const nextPage = () => {
-        if (page.current === Math.ceil(dataFound / 10)) {
+        if (page.current === Math.ceil(dataFound / 10) || dataFound === 0) {
             console.log('Error');
             setIsOpen(true);
-            setTimeout(() => setIsOpen(false), 2000);
+            setMessage('Page didn\'t exist!');
+            setTimeout(() => setIsOpen(false), 3000);
         } else {
             page.current += 1;
             setPageJump(page.current);
-            // setPageJump(prev => prev + 1);
             getMovies(finishQuery, page.current);
         }
     }
@@ -23,11 +24,11 @@ const Pagination = () => {
         if (page.current === 1) {
             console.log('Error');
             setIsOpen(true);
-            setTimeout(() => setIsOpen(false), 2000);
+            setMessage('This is the first page!');
+            setTimeout(() => setIsOpen(false), 3000);
         } else {
             page.current -= 1;
             setPageJump(page.current);
-            // setPageJump(prev => prev - 1);
             getMovies(finishQuery, page.current);
         }
     }
@@ -39,7 +40,8 @@ const Pagination = () => {
         if (pageJump > Math.ceil(dataFound / 10)) {
             console.log('Error');
             setIsOpen(true);
-            setTimeout(() => setIsOpen(false), 2000);
+            setMessage(`There are only ${Math.ceil(dataFound / 10)} pages!`)
+            setTimeout(() => setIsOpen(false), 3000);
         } else {
             page.current = parseInt(pageJump);
             getMovies(finishQuery, pageJump);
@@ -56,9 +58,7 @@ const Pagination = () => {
                 <button className='btn next-btn' onClick={nextPage}><i className="fas fa-angle-right"></i></button>
             </div>
 
-            <Error isOpen={isOpen}>
-                Page didn't Exists!
-            </Error>
+            <Error isOpen={isOpen} message={message} />
 
             <div className="jump-page">
                 <p>Jump to page: </p>

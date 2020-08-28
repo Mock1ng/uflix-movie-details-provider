@@ -7,14 +7,19 @@
         @include boxShadow(2px, 3px);
         width: auto;
         padding: 0px 20px;
+        display: flex;
+        justify-content: center;
 
         @include for-desktop() {
             width: max-content;
+            padding: 0px 20px;
         }
 
         .fa-search {
             margin-right: 20px;
             color: $White;
+            display: flex;
+            align-items: center;
         }
 
         #movie-title {
@@ -30,13 +35,15 @@
             }
 
             @include for-desktop() {
-                width: 400px;
+                width: calc(400px);
             }
         }
 
         .remove-query {
             color: gray;
             transition: 0.1s all;
+            display: flex;
+            align-items: center;
 
             &:hover {
                 cursor: pointer;

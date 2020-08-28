@@ -31,8 +31,8 @@ const DetailMovie = ({ match }) => {
                         <div className="head-title">
                             <h4>{movie.Title} <span>({movie.Type}, {movie.Year})</span></h4>
                             <div className="imdb-ratings">
-                                <p>IMDb*: <span>{movie.imdbRating}</span></p>
-                                <p className='vote'>Votes: <span>{movie.imdbVotes}</span></p>
+                                <p>IMDb: <span>{movie.imdbRating}</span> <i className="fas fa-star"></i></p>
+                                <p className='vote'>Votes: <span>{movie.imdbVotes}</span> <i className="fas fa-thumbs-up"></i></p>
                             </div>
                         </div>
 
@@ -62,6 +62,8 @@ const DetailMovie = ({ match }) => {
                                     <p key={rating.Source}>{rating.Source}: <span>{rating.Value}</span></p>
                                 ))}
                             </div>
+                            <p className="attr">DVD Release: <span>{movie.DVD}</span></p>
+                            <p className="attr">Box Office: <span>{movie.BoxOffice}</span></p>
                         </div>
                     </div>
 

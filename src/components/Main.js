@@ -14,7 +14,7 @@ const Main = () => {
 
             {dataFound > 0 ? (<p className='data-found'>Found {dataFound} item(s)</p>) : ''}
 
-            <Pagination />
+            {dataFound > 0 ? <Pagination /> : ''}
 
             <div className="movie-wrapper">
                 {movies ?

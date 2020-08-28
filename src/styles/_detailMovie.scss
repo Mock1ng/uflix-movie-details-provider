@@ -53,6 +53,10 @@
                         color: $GrayText;
                     }
 
+                    .fa-star {
+                        color: gold;
+                    }
+
                     span {
                         font-weight: 300;
                     }
@@ -115,6 +119,7 @@
                 }
 
                 .movie-ratings {
+                    margin-bottom: 15px;
 
                     .rating,
                     p {
