@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Mock1ng.github.io/uflix-movie-details-provider/static/css/main.72f85b9d.chunk.css",
+    "main.js": "/Mock1ng.github.io/uflix-movie-details-provider/static/js/main.9c6fa237.chunk.js",
+    "main.js.map": "/Mock1ng.github.io/uflix-movie-details-provider/static/js/main.9c6fa237.chunk.js.map",
+    "runtime-main.js": "/Mock1ng.github.io/uflix-movie-details-provider/static/js/runtime-main.28f28465.js",
+    "runtime-main.js.map": "/Mock1ng.github.io/uflix-movie-details-provider/static/js/runtime-main.28f28465.js.map",
+    "static/js/2.75951975.chunk.js": "/Mock1ng.github.io/uflix-movie-details-provider/static/js/2.75951975.chunk.js",
+    "static/js/2.75951975.chunk.js.map": "/Mock1ng.github.io/uflix-movie-details-provider/static/js/2.75951975.chunk.js.map",
+    "index.html": "/Mock1ng.github.io/uflix-movie-details-provider/index.html",
+    "precache-manifest.c5217d82ba00c0cf12973998b7d884dc.js": "/Mock1ng.github.io/uflix-movie-details-provider/precache-manifest.c5217d82ba00c0cf12973998b7d884dc.js",
+    "service-worker.js": "/Mock1ng.github.io/uflix-movie-details-provider/service-worker.js",
+    "static/css/main.72f85b9d.chunk.css.map": "/Mock1ng.github.io/uflix-movie-details-provider/static/css/main.72f85b9d.chunk.css.map",
+    "static/js/2.75951975.chunk.js.LICENSE.txt": "/Mock1ng.github.io/uflix-movie-details-provider/static/js/2.75951975.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.28f28465.js",
+    "static/js/2.75951975.chunk.js",
+    "static/css/main.72f85b9d.chunk.css",
+    "static/js/main.9c6fa237.chunk.js"
+  ]
+}
