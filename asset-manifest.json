@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/uflix-movie-details-provider/static/css/main.dec41f68.chunk.css",
-    "main.js": "/uflix-movie-details-provider/static/js/main.0ae9e7fe.chunk.js",
-    "main.js.map": "/uflix-movie-details-provider/static/js/main.0ae9e7fe.chunk.js.map",
+    "main.js": "/uflix-movie-details-provider/static/js/main.59560df4.chunk.js",
+    "main.js.map": "/uflix-movie-details-provider/static/js/main.59560df4.chunk.js.map",
     "runtime-main.js": "/uflix-movie-details-provider/static/js/runtime-main.fcce0356.js",
     "runtime-main.js.map": "/uflix-movie-details-provider/static/js/runtime-main.fcce0356.js.map",
     "static/js/2.f578ebeb.chunk.js": "/uflix-movie-details-provider/static/js/2.f578ebeb.chunk.js",
     "static/js/2.f578ebeb.chunk.js.map": "/uflix-movie-details-provider/static/js/2.f578ebeb.chunk.js.map",
     "index.html": "/uflix-movie-details-provider/index.html",
-    "precache-manifest.a591d8dc9925b9e7fc5bb2caafb9a6bc.js": "/uflix-movie-details-provider/precache-manifest.a591d8dc9925b9e7fc5bb2caafb9a6bc.js",
+    "precache-manifest.61f6d312130e0bbe2010e461f02ea507.js": "/uflix-movie-details-provider/precache-manifest.61f6d312130e0bbe2010e461f02ea507.js",
     "service-worker.js": "/uflix-movie-details-provider/service-worker.js",
     "static/css/main.dec41f68.chunk.css.map": "/uflix-movie-details-provider/static/css/main.dec41f68.chunk.css.map",
     "static/js/2.f578ebeb.chunk.js.LICENSE.txt": "/uflix-movie-details-provider/static/js/2.f578ebeb.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.fcce0356.js",
     "static/js/2.f578ebeb.chunk.js",
     "static/css/main.dec41f68.chunk.css",
-    "static/js/main.0ae9e7fe.chunk.js"
+    "static/js/main.59560df4.chunk.js"
   ]
 }
