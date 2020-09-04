@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/uflix-movie-details-provider/precache-manifest.224c49c74e883d5934daccee5e4a52db.js"
+  "/uflix-movie-details-provider/precache-manifest.c8bf759df6f78fbe13b455de3cabd9e9.js"
 );
 
 self.addEventListener('message', (event) => {

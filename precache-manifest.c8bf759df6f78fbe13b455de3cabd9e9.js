@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "20de03182819cce885079059a4ae1ad9",
+    "revision": "a5e9373e00936be1d7e5afbb5aa22dd4",
     "url": "/uflix-movie-details-provider/index.html"
   },
   {
-    "revision": "6697aca7689658eccb6e",
+    "revision": "abd0bd9fb14b1531c5b3",
     "url": "/uflix-movie-details-provider/static/css/main.72f85b9d.chunk.css"
   },
   {
-    "revision": "78c4eaf96680cad5e6c6",
-    "url": "/uflix-movie-details-provider/static/js/2.75951975.chunk.js"
+    "revision": "2ec9cb57c4edc6016303",
+    "url": "/uflix-movie-details-provider/static/js/2.c8406c83.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/uflix-movie-details-provider/static/js/2.75951975.chunk.js.LICENSE.txt"
+    "url": "/uflix-movie-details-provider/static/js/2.c8406c83.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6697aca7689658eccb6e",
-    "url": "/uflix-movie-details-provider/static/js/main.0cbfc54d.chunk.js"
+    "revision": "abd0bd9fb14b1531c5b3",
+    "url": "/uflix-movie-details-provider/static/js/main.879e945a.chunk.js"
   },
   {
     "revision": "4ff5074d112f2bfd7860",
